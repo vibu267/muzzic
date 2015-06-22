@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+	<title>MuzzicApp - The Sound Of Music</title>
+	<style type = "text/css">
+		body{
+
+			font-family:Century Gothic,sans-serif;
+			background-color: black;
+		}
+		h1{
+			text-align: left;
+			font-size: 24pt;
+			color:#E60075;
+		}
+		a:link{
+			text-decoration: none;
+			font-
+		}
+		p.intro{
+			text-align:center;
+			font-size: 12pt;
+			color:#E60075;
+		}
+		p.ll{
+			text-align:center;
+			font-size: 16pt;
+			color:#E60075;
+		}
+	</style>
+	<script type = "text/javascript">
+		var tracks = new Array()
+		var trackdetails = new Array()
+		var title = new Array()
+
+		tracks[0] ="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/19087066&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true "
+
+		title [0] = "Wait by M83"
+
+		trackdetails[0] = " Song : Wait \n Artist : M83 \n Album : Hurry Up, We're Dreaming \n"
+
+		tracks[1] = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/138728505&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
+
+		tracks[2] = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/146077055&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"
+
+
+
+		var trackno = 0
+
+		function TrackURL()
+		{	
+			var temp = trackno
+			while(temp==trackno)
+				var temp = Math.floor(Math.random() * tracks.length)
+			trackno = temp
+			var randomtrack = tracks[trackno]
+			document.getElementById("discovertrack").src = randomtrack
+
+
+		}
+	</script>
+</head>
+<body>
+	<h1>
+		<a href="http:\\soundcloud.com" link = "E60075">MuzzicApp.</a>
+		<br>
+		<sub>The Sound Of Music.</sub>
+	</h1>
+	<br>
+	<br>
+	<p class="intro">
+		Hello! Welcome to my world of music. Here you're going to discover new music which probably deserved more attention. Just click to be amazed.
+	</p>
+	<br>
+	<br>
+	<p class="ll">
+		LOVE MUSIC.LIVE MUSIC.
+	</p>
+	<div id ="Discover">
+		<center>
+			<button onclick="TrackURL()">Discover!</button>
+			<br>
+			<br>
+			<iframe id = "discovertrack" width="450" height="350" scrolling="no" frameborder="no" src="">
+			</iframe>
+
+			<br>
+		</center>
+	</div>
+</body>	
+</html>
