@@ -25,7 +25,7 @@ SECRET_KEY = '^xi%xck$9kscpixv_ti8wrey-a4vsyu(16lkifm!+(2)^1(jg5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['muzzic.mybluemix.net','muzzicdir.mybluemix.net',]
 
 
 # Application definition
@@ -56,7 +56,7 @@ ROOT_URLCONF = 'Muzzic.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['C:\Users\VIBU-ADMIN\Desktop\IBM Stuff\Projects\Bluemix\Muzzicdir\Templates',],
+        'DIRS': ['C:\Users\VIBU-ADMIN\Desktop\My Projects\My Projects\Python\Django\Muzzicdir\Templates',],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
